@@ -1,5 +1,4 @@
 
-/** global element styling **/
 
 @import 'https://fonts.googleapis.com/css?family=Lato:400,700';
 
@@ -36,9 +35,10 @@ a {
 }
 
 .btn {
-  padding: 0 20px;
-  height: 40px;
-  font-size: 1em;
+  margin: 0px;
+  width: 500px;
+  height: 70px;
+  font-size: 0.6rem;
   font-weight: 900;
   text-transform: uppercase;
   border: 3px black solid;
@@ -170,7 +170,7 @@ nav > ul {
   }
 }
 
-#features {
+#desc {
   margin-top: 30px;
 }
 
