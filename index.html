@@ -15,16 +15,16 @@
         <div class="logo">
           <img
             id="header-img"
-            src="https://cdn.freecodecamp.org/testable-projects-fcc/images/product-landing-page-logo.png"
-            alt="original trombones logo"
+            src="https://www.theice.com/publicdocs/images/Hero_1150x550_NYSE-Podium1-1150x550.jpg"
+            alt="NYSE openng bell photo"
           />
         </div>
 
         <nav id="nav-bar">
           <ul>
-            <li><a class="nav-link" href="#features">Features</a></li>
-            <li><a class="nav-link" href="#how-it-works">How It Works</a></li>
-            <li><a class="nav-link" href="#pricing">Pricing</a></li>
+            <li><a class="nav-link" href="#mae">MAE</a></li>
+            <li><a class="nav-link" href="#mfe">MFE</a></li>
+            <li><a class="nav-link" href="#dom">DOM</a></li>
           </ul>
         </nav>
       </header>
@@ -32,7 +32,7 @@
       <div class="container"></div>
 
       <section id="hero">
-        <h2>Handcrafted, home-made masterpieces</h2>
+        <h2>Trading vocabulary</h2>
         <form id="form" action="https://www.freecodecamp.com/email-submit">
           <input
             name="email"
@@ -41,30 +41,27 @@
             placeholder="Enter your email address"
             required
           />
-          <input id="submit" type="submit" value="Get Started" class="btn" />
+          <input id="submit" type="submit" value="Sign up for our emails" class="btn" />
         </form>
       </section>
 
       <div class="container">
-        <section id="features">
+        <section id="mae">
           <div class="grid">
-            <div class="icon"><i class="fa fa-3x fa-fire"></i></div>
-            <div class="desc">
-              <h2>Premium Materials</h2>
+            <div class="icon"><i class="fa-duotone fa-regular fa-display-chart-up-circle-dollar"></i></div>
+            <div class="mae">
+              <h2>MAE (Maximum Adverse Excursion)</h2>
               <p>
-                Our trombones use the shiniest brass which is sourced locally.
-                This will increase the longevity of your purchase.
+This is one of the most commonly referenced metrics. It represents the largest unfavorable movement a trade experiences after being opened. For instance, if you purchase AAPL at $145 and the price drops to $144 before recovering, your MAE is $1.
               </p>
             </div>
           </div>
           <div class="grid">
             <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
             <div class="desc">
-              <h2>Fast Shipping</h2>
+              <h2>MFE (Maximum Favorable Excursion)</h2>
               <p>
-                We make sure you recieve your trombone as soon as we have
-                finished making it. We also provide free returns if you are not
-                satisfied.
+The counterpart to MAE, MFE measures the maximum favorable movement a trade achieves while it remains open. Using the AAPL example again, if you buy at $145 and the price rises to $150 before closing the trade at $149, your MFE is $5.
               </p>
             </div>
           </div>
@@ -73,11 +70,9 @@
               <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
             </div>
             <div class="desc">
-              <h2>Quality Assurance</h2>
+              <h2>DOM (Depth of Market)</h2>
               <p>
-                For every purchase you make, we will ensure there are no damages
-                or faults and we will check and test the pitch of your
-                instrument.
+For traders who don’t rely on charts, DOM offers an intuitive view of the market. It displays the prices at which participants are willing to buy and sell, along with the size (quantity) at each price level. Chart traders may find DOM less familiar, but it essentially visualizes the market as a collection of buy and sell orders, showing both sides of the price along with the corresponding order sizes.
               </p>
             </div>
           </div>
@@ -86,7 +81,7 @@
           <iframe
             id="video"
             height="315"
-            src="https://www.youtube-nocookie.com/embed/y8Yv4pnO7qc?rel=0&amp;controls=0&amp;showinfo=0"
+            src="https://www.youtube.com/watch?v=p7HKvqRI_Bo"
             frameborder="0"
             allowfullscreen
           ></iframe>
@@ -132,10 +127,19 @@
             <li><a href="#">Terms</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
-          <span>Copyright 2016, Original Trombones</span>
+          <span>Copyright 2025, FINSI </span>
         </footer>
       </div>
     </div>
   </body>
 </html>
 
+
+/*Ask (or Offer):
+The ask is the opposite of the bid. It indicates the price and quantity at which a seller is willing to sell. For example, if you list 100 shares of AAPL for sale at $151, your order becomes part of the sell side, waiting to be matched. Execution priority depends on your exchange's matching algorithm, which we’ll cover in another post.
+
+VAL, VAH, VWAP:
+These terms relate to the position of price within a market profile. VAH (Value Area High) is the highest price within the range where 70% of trading activity occurred. VAL (Value Area Low) is the lowest price within the same range. VWAP (Volume-Weighted Average Price) provides an average price based on volume and time. In a future post, we’ll delve deeper into time and volume-based profiles, which are key components of order flow analysis.
+
+LIS (Line in Sand):
+This is my personal threshold for risk, representing the maximum loss I’m willing to accept to determine whether my trade or market bias is correct. It’s my ultimate decision point for managing risk effectively.*/
