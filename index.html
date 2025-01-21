@@ -16,20 +16,22 @@
           <img
             id="header-img"
             src="https://www.theice.com/publicdocs/images/Hero_1150x550_NYSE-Podium1-1150x550.jpg"
-            alt="NYSE openng bell photo"
+            alt="NYSE opening bell photo"
           />
         </div>
-
         <nav id="nav-bar">
           <ul>
             <li><a class="nav-link" href="#mae">MAE</a></li>
             <li><a class="nav-link" href="#mfe">MFE</a></li>
             <li><a class="nav-link" href="#dom">DOM</a></li>
+            <li><a class="nav-link" href="#bid">BID</a></li>
+            <li><a class="nav-link" href="#ask">Ask</a></li>
+            <li><a class="nav-link" href="#val">VAL, VAH, VWAP</a></li>
+            <li><a class="nav-link" href="#how-it-works">How it works</a></li>
+            <li><a class="nav-link" href="#pricing">Pricing</a></li>
           </ul>
         </nav>
       </header>
-
-      <div class="container"></div>
 
       <section id="hero">
         <h2>Trading vocabulary</h2>
@@ -45,101 +47,110 @@
         </form>
       </section>
 
-      <div class="container">
-        <section id="mae">
-          <div class="grid">
-            <div class="icon"><i class="fa-duotone fa-regular fa-display-chart-up-circle-dollar"></i></div>
-            <div class="mae">
-              <h2>MAE (Maximum Adverse Excursion)</h2>
-              <p>
-This is one of the most commonly referenced metrics. It represents the largest unfavorable movement a trade experiences after being opened. For instance, if you purchase AAPL at $145 and the price drops to $144 before recovering, your MAE is $1.
-              </p>
-            </div>
+      <section id="mae">
+        <div class="grid">
+          <div class="icon"><i class="fas fa-sack-dollar"></i></div>
+          <div class="mae">
+            <h2>MAE (Maximum Adverse Excursion)</h2>
+            <p>
+              This is one of the most commonly referenced metrics. It represents the largest unfavorable movement a trade experiences after being opened. For instance, if you purchase AAPL at $145 and the price drops to $144 before recovering, your MAE is $1.
+            </p>
           </div>
-          <div class="grid">
-            <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
-            <div class="desc">
-              <h2>MFE (Maximum Favorable Excursion)</h2>
-              <p>
-The counterpart to MAE, MFE measures the maximum favorable movement a trade achieves while it remains open. Using the AAPL example again, if you buy at $145 and the price rises to $150 before closing the trade at $149, your MFE is $5.
-              </p>
-            </div>
+        </div>
+      </section>
+
+      <section id="mfe">
+        <div class="grid">
+          <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+          <div class="mfe">
+            <h2>MFE (Maximum Favorable Excursion)</h2>
+            <p>
+              The counterpart to MAE, MFE measures the maximum favorable movement a trade achieves while it remains open. Using the AAPL example again, if you buy at $145 and the price rises to $150 before closing the trade at $149, your MFE is $5.
+            </p>
           </div>
-          <div class="grid">
-            <div class="icon">
-              <i class="fa fa-3x fa-battery-full" aria-hidden="true"></i>
-            </div>
-            <div class="desc">
-              <h2>DOM (Depth of Market)</h2>
-              <p>
-For traders who don’t rely on charts, DOM offers an intuitive view of the market. It displays the prices at which participants are willing to buy and sell, along with the size (quantity) at each price level. Chart traders may find DOM less familiar, but it essentially visualizes the market as a collection of buy and sell orders, showing both sides of the price along with the corresponding order sizes.
-              </p>
-            </div>
+        </div>
+      </section>
+
+      <section id="dom">
+        <div class="grid">
+          <div class="icon"><i class="fa fa-3x fa-battery-full" aria-hidden="true"></i></div>
+          <div class="dom">
+            <h2>DOM (Depth of Market)</h2>
+            <p>
+              For traders who don’t rely on charts, DOM offers an intuitive view of the market. It displays the prices at which participants are willing to buy and sell, along with the size (quantity) at each price level. Chart traders may find DOM less familiar, but it essentially visualizes the market as a collection of buy and sell orders, showing both sides of the price along with the corresponding order sizes.
+            </p>
           </div>
-        </section>
-        <section id="how-it-works">
-          <iframe
-            id="video"
-            height="315"
-            src="https://www.youtube.com/watch?v=p7HKvqRI_Bo"
-            frameborder="0"
-            allowfullscreen
-          ></iframe>
-        </section>
-        <section id="pricing">
-          <div class="product" id="tenor">
-            <div class="level">Tenor Trombone</div>
-            <h2>$600</h2>
-            <ol>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum dolor.</li>
-              <li>Lorem ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
+        </div>
+      </section>
+
+      <section id="bid">
+        <div class="grid">
+          <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+          <div class="bid">
+            <h2>Bid</h2>
+            <p>
+              The bid is the price a buyer is willing to pay for an asset. For example, if you want to buy AAPL and are only willing to pay up to $146, you place a limit order at $146, joining others who are also bidding at that price.
+            </p>
           </div>
-          <div class="product" id="bass">
-            <div class="level">Bass Trombone</div>
-            <h2>$900</h2>
-            <ol>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum.</li>
-              <li>Lorem ipsum dolor.</li>
-              <li>Lorem ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
+        </div>
+      </section>
+
+      <section id="ask">
+        <div class="grid">
+          <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+          <div class="ask">
+            <h2>Ask (or Offer)</h2>
+            <p>
+              The ask is the opposite of the bid. It indicates the price and quantity at which a seller is willing to sell.
+            </p>
           </div>
-          <div class="product" id="valve">
-            <div class="level">Valve Trombone</div>
-            <h2>$1200</h2>
-            <ol>
-              <li>Plays similar to a Trumpet</li>
-              <li>Great for Jazz Bands</li>
-              <li>Lorem ipsum dolor.</li>
-              <li>Lorem ipsum.</li>
-            </ol>
-            <button class="btn">Select</button>
+        </div>
+      </section>
+
+      <section id="val">
+        <div class="grid">
+          <div class="icon"><i class="fa fa-3x fa-truck"></i></div>
+          <div class="val">
+            <h2>VAL, VAH, VWAP</h2>
+            <p>
+              These terms relate to the position of price within a market profile. VAH (Value Area High) is the highest price within the range where 70% of trading activity occurred. VAL (Value Area Low) is the lowest price within the same range. VWAP (Volume-Weighted Average Price) provides an average price based on volume and time.
+            </p>
           </div>
-        </section>
-        <footer>
-          <ul>
-            <li><a href="#">Privacy</a></li>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">Contact</a></li>
-          </ul>
-          <span>Copyright 2025, FINSI </span>
-        </footer>
-      </div>
+        </div>
+      </section>
+
+      <section id="how-it-works">
+        <iframe
+          id="video"
+          height="315"
+          src="https://www.youtube.com/watch?v=p7HKvqRI_Bo"
+          frameborder="0"
+          allowfullscreen
+        ></iframe>
+      </section>
+
+      <section id="pricing">
+        <div class="product" id="tenor">
+          <div class="level">One-time subscription</div>
+          <h2>only $9,99</h2>
+          <ol>
+            <li>Pay one time</li>
+            <li>Get full access to all of our resources</li>
+            <li>AI support chat to answer all questions</li>
+            <li>Technical and Fundamental analysis</li>
+          </ol>
+          <button class="btn">Select</button>
+        </div>
+      </section>
+
+      <footer>
+        <ul>
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <span>Copyright 2025, FINSI </span>
+      </footer>
     </div>
   </body>
 </html>
-
-
-/*Ask (or Offer):
-The ask is the opposite of the bid. It indicates the price and quantity at which a seller is willing to sell. For example, if you list 100 shares of AAPL for sale at $151, your order becomes part of the sell side, waiting to be matched. Execution priority depends on your exchange's matching algorithm, which we’ll cover in another post.
-
-VAL, VAH, VWAP:
-These terms relate to the position of price within a market profile. VAH (Value Area High) is the highest price within the range where 70% of trading activity occurred. VAL (Value Area Low) is the lowest price within the same range. VWAP (Volume-Weighted Average Price) provides an average price based on volume and time. In a future post, we’ll delve deeper into time and volume-based profiles, which are key components of order flow analysis.
-
-LIS (Line in Sand):
-This is my personal threshold for risk, representing the maximum loss I’m willing to accept to determine whether my trade or market bias is correct. It’s my ultimate decision point for managing risk effectively.*/
